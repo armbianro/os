@@ -47,7 +47,7 @@ jobs:
 
     name: "Cluster 7/7"
     needs: Prepare
-    if: ${{ github.repository_owner == 'armbian-alpha' }}
+    if: ${{ github.repository_owner == 'armbianro' }}
     uses: armbian/scripts/.github/workflows/build-images.yml@main
     with:
 
