@@ -79,7 +79,7 @@ jobs:
         days_old: 1
 
     - uses: ncipollo/release-action@v1
-      if: ${{ github.repository_owner == 'armbian-alpha' && github.event.client_payload.release == 'nightly' }}
+      if: ${{ github.repository_owner == 'armbianro' && github.event.client_payload.release == 'nightly' }}
       with:
         tag: "${{ github.event.client_payload.version }}"
         omitBody: true
